@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form tng</title>
+</head>
+<body>
+  <h1>회원 가입을 환영합니다</h1>
+  <br>
+  <form action="" method="get">
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <br>
+      <ul>
+        <li>
+          <label for="account">아이디</label>
+          <input type="text" name="account" id="account" placeholder="4자~10자 사이, 공백없이">
+        </li>
+        <li><label for="email">이메일</label>
+          <input type="text" name="email" id="email">
+        </li>
+        <li>
+          <label for="password">비밀번호</label>
+          <input type="text" name="password" id="password" placeholder="문자와 숫자,특수 기호 포함"></li>
+        <li>
+          <label for="password check">비밀번호 확인</label>
+          <input type="text" name="password check" id="password check"></li>
+        <li>가입 경로 
+          <select name="abab" id="abab">
+            <option value="기타">기타</option>
+          </select>
+
+        </li>
+        <textarea name="info" id="info">남길 말씀이 있다면 여기에</textarea>
+        <li>메모 <input type="text" name="메모" id=""></li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>이벤트와 새로운 소식</legend>
+        <input type="radio" name="mailCofirm" id="mailTrue">
+        <label for="mailTrue">메일수신</label>
+        <input type="radio" name="mailCofirm" id="mailfail">
+        <label for="mailfail">메일 수신 안함</label>
+    </fieldset>
+  </form>
+</body>
+</html>
